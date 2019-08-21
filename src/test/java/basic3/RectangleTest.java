@@ -9,6 +9,6 @@ public class RectangleTest {
     public void rectangleTest() {
         Rectangle rectangle = new Rectangle(3,4);
         Integer result = rectangle.calculate();
-        Assert.assertEquals(Integer.valueOf(12), result);
+        Assert.assertTrue("长3宽4的矩形面积应该为12", result == 12);
     }
 }
